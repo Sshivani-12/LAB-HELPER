@@ -97,7 +97,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
                <div class="form-group">
               <select class="form-control" name="Department">
  	  	<option > DEPARTMENT</option>
-  			<option value="COMPUTER">COMPUTER</option>
+  			<option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
   			<option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
   			<option value="ELECTRONICS & TELECOMMUNICATION">ELECTRONICS & TELECOMMUNICATION</option>
   			<option value="ELECTRONICS">ELECTRONICS</option>
