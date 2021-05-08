@@ -77,7 +77,7 @@ body {margin:0;}
 
 <div class="login-clean" style="background-image:url(&quot;assets/img/computer-lab-png-computer-lab-992.png&quot;);background-repeat:no-repeat;background-size:cover;">
 	<div class="icon-bar">
-  	<a class="active" href="home.html"><i class="fa fa-home"></i></a>
+  	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div>
 
     

@@ -77,7 +77,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <a  class="active"href="logoutstd.php" ><i class="fa fa-power-off"></i></a>
   <div class="iconbar-right">
   	<a  class="active"href=""><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
-  	<a class="active" href="home.html"><i class="fa fa-home"></i></a>
+  	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div></div>
 
 

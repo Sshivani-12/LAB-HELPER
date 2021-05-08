@@ -127,7 +127,7 @@ if(isset($_POST['Submit']))
   <div class="icon-bar">
     <div class="iconbar-right">
   	<a href="Loginstd.php"><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
-  	<a class="active" href="home.html"><i class="fa fa-home"></i></a>
+  	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div></div>
         <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-42px;background-color:#8c0100;color:rgb(255,255,255);">Forgot password</h1>
         <form method="post" style="background-repeat:no-repeat;margin-top:105px;" action="Forgetpassstu.php"><br>
