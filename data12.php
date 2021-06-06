@@ -139,11 +139,11 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 	            if(isset( $_POST["SUBMIT"])){
         //  $NAMES= $_SESSION['Name']; //$_SESSION['Username'];
         
-           $ROLL_NO= $_SESSION['RollNo'];
+					$ROLL_NO= $_SESSION['RollNo'];
        
 					 $LABNO=$_POST["LABNO"];
 					 $PCNO=$_POST["PCNO"];
-           $SUBJECT = $_POST["SUBJECT"];
+					$SUBJECT = $_POST["SUBJECT"];
 					
 					 $DATE=$_POST["DATE"];
 					 $TIME=$_POST["TIME"];

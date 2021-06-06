@@ -93,7 +93,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <table width="1000" border="2" class="table table-striped ">
       <thead bgcolor="#8c0100" style="color:white; font-size: 16px;">
         <th class="hidden-print"></th>
-         <th height="40" >SR.NO</th>
+         
           <th>ROLL NO</th>
             <th >LAB NO</th>
             <th>PC NO</th>
@@ -115,7 +115,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           ?>
           <tr bgcolor="#ef8b8b"  style="font-size: 16px;">
             <td class="hidden-print" align="center"><input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"></td>
-             <td height="28"><?php echo $id=$row['id']; ?></td>
+           
                     <td><?php echo $Roll_No=$row['RollNo']; ?></td>
                        <td><?php echo $LABNO=$row['LABNO']; ?></td>
                     <td><?php echo $PCNO=$row['PCNO']; ?></td>
@@ -142,7 +142,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
   <table width="1000" border="2" class="table table-striped ">
       <thead bgcolor="#8c0100" style="color:white; font-size: 16px;">
-     <th height="40" >SR.NO</th>
+    
         <th>ROLL NO</th>
         <th >LABNO</th>
         <th>PCNO</th>
@@ -160,7 +160,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             while ($row=mysqli_fetch_array($run_s)){
             ?>
                 <tr bgcolor="#ef8b8b">
-                      <td height="28"><?php echo $id=$row['id']; ?></td>
+                      
                       <td><?php echo $Roll_No=$row['RollNo']; ?></td>
                        <td><?php echo $LABNO=$row['LABNO']; ?></td>
                     <td><?php echo $PCNO=$row['PCNO']; ?></td>

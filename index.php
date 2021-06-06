@@ -15,7 +15,7 @@
 <body>
   <div class="login-clean" style="background-image:url('background.jpg');background-repeat:no-repeat;background-size:cover;">
     
-               <h1 class="text-uppercase text-center" style="font-family:Alegreya, serif;background-color:#8c0100;color:#ffffff;font-size:45px;;letter-spacing:2px;font-weight:bold;margin-top:-50px;background-repeat:no-repeat;background-size:auto;"><strong>LAB MAINTENANCE SYSTEM</strong></h1> 
+  <h1 class="text-uppercase text-center" style="font-family:Alegreya, serif;background-color:#8c0100;color:#ffffff;font-size:45px;;letter-spacing:2px;font-weight:bold;margin-top:-50px;background-repeat:no-repeat;background-size:auto;"><strong>LAB MAINTENANCE SYSTEM</strong></h1> 
 
 
     <div class="team-boxed" >
@@ -34,7 +34,7 @@
                 <div class="col-md-6 col-lg-4 mr-auto item" style="background-position:right;">
                     <div class="box">
                         <p class="title"><div class="container-fluid" style="background-image:url('images/std.png');background-position:center;background-repeat:no-repeat;height:235px;"></div>
-</p>
+			</p>
                     </div><a class="btn btn-secondary active btn-block btn-lg" role="button" href="Loginstd.php" style="background-color:#8c0100;">STUDENT</a></div>
             </div>
         </div>

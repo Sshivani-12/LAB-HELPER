@@ -126,6 +126,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 			x.type = "password";
 			}
 			}
+			
 			</script>
 			</div>
 
@@ -151,7 +152,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
                  <div class="form-group"><button class="btn btn-primary active btn-block btn-lg" role="button" href="Loginstd.html" name="SignUp">SignUp</button>
                  </div>
                  <a href="Loginstd.php" class="already">You already have an account? Login here.</a>
-    </form> 
+				</form> 
                <?php
 	            if(isset( $_POST["SignUp"])){
 	            	
@@ -201,10 +202,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 
 				
 				} 
-				
-			    
-			     
-				
 				?>
     
     </div>

@@ -78,10 +78,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div></div>
 
-
-
-
-
 <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-46px;background-color:#8c0100;color:rgb(255,255,255);"></h1>
       <br><br>
 <form method="post" style="margin-top:40px;">
