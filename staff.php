@@ -89,8 +89,8 @@ include('config.php');
             <input class="form-control" type="email" name="EmailId" placeholder="EMAIL ID"  required ></div>
            <div class="form-group">
           
-              <select class="form-control" name="Department">
- 	  	<option > DEPARTMENT</option>
+              <select class="form-control" name="Department" required>
+ 	  	<option value="" > DEPARTMENT</option>
   			<option value="COMPUTER ">COMPUTER</option>
   			<option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
   			<option value="ELECTRONICS & TELECOMMUNICATION">ELECTRONICS & TELECOMMUNICATION</option>

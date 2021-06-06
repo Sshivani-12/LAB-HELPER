@@ -94,9 +94,9 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
                 	
                 	
                 	
-               <div class="form-group">
-              <select class="form-control" name="Department">
- 	  	<option > DEPARTMENT</option>
+               <div class="form-group" >
+              <select class="form-control" name="Department" required>
+ 	  	<option value=""> DEPARTMENT</option>
   			<option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
   			<option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
   			<option value="ELECTRONICS & TELECOMMUNICATION">ELECTRONICS & TELECOMMUNICATION</option>
@@ -104,9 +104,9 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
   			<option value="INSTRUMENTATION">INSTRUMENTATION</option>
 			</select></div>
 		
-<div class="form-group">
+<div class="form-group" required>
     <select class="form-control" name="Year">
-  	<option > YEAR</option>
+  	<option value=""> YEAR</option>
   <option value="FIRST YEAR">FIRST YEAR</option>
   <option value="SECOND YEAR">SECOND YEAR</option>
   <option value="THIRD YEAR">THIRD YEAR</option>
