@@ -73,8 +73,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
    
  <div class="login-clean" style="background-image:url(&quot;assets/img/computer-lab-png-computer-lab-992.png&quot;);background-repeat:no-repeat;background-size:cover ;">
      <div class="icon-bar">
-   
-  <a  class="active"href="logoutstd.php" ><i class="fa fa-power-off"></i></a>
+    <div style="color:#8c0100">
+	<?php echo "logged in by ".$Roll_No= $_SESSION['RollNo'] ?>
+		</div>
+  <a  class="active"href="logoutstd.php" >
+  
+<i class="fa fa-power-off">
+  
+  
+  </i></a>
   <div class="iconbar-right">
   	<a  class="active"href=""><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
   	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
@@ -85,7 +92,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-46px;background-color:#8c0100;color:rgb(255,255,255);"></h1>
-      
+     
 	<br>
   <br>
 

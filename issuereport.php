@@ -74,7 +74,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="iconbar-right">
     <a href="menu12.php"><i onclick="history.back()" class="fa fa-arrow-left"></i></a>
     <a href="index.php"><i class="fa fa-home"></i></a>
-  </div></div>
+  </div>
+  
+  <div style="color:white">
+	<?php echo "logged in by ".$FACULTYNAME= $_SESSION['StaffId'] ?>
+		</div>			
+
+  </div>
+  
+  	
  <br>  
  <div class="no-print">
     <button class="btn btn-primary" style="float: right" onclick="window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>&nbsp;&nbsp;Print</button></div>
@@ -113,8 +121,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         $query=mysqli_query($conn,"select * from issue12");
         while($row=mysqli_fetch_array($query)){
           ?>
-          <tr bgcolor="#ef8b8b"  style="font-size: 16px;">
-            <td class="hidden-print" align="center"><input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]"></td>
+          <tr bgcolor="#ef8b8b"  style="font-size: 15px;">
+            <td class="hidden-print" align="center"><input type="checkbox" value="<?php echo $row['id']; ?>" name="id[]" ></td>
            
                     <td><?php echo $Roll_No=$row['RollNo']; ?></td>
                        <td><?php echo $LABNO=$row['LABNO']; ?></td>
@@ -124,11 +132,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <td><?php echo $Categories=$row['Categories']; ?></td>
                     <td><?php echo $Issue=$row['Issue']; ?></td>
                      <td><?php echo $COMMENT=$row['COMMENT']; ?></td>
+					 
                       </tr>
           <?php
         }
       
       ?>
+	  
+	        	
       </tbody>
     </table><center>
        <button type="submit" class="btn btn-primary hidden-print"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp; Completed</button>
@@ -139,6 +150,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <div class="tab-pane" role="tabpanel" id="tab-2">
 <h3 class="text-uppercase text-center justify-content-center hide-on-screen" style="font-weight:bold;">Solved Issues</h3>
  <div class="container">
+
+
 
   <table width="1000" border="2" class="table table-striped ">
       <thead bgcolor="#8c0100" style="color:white; font-size: 16px;">
@@ -169,6 +182,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <td><?php echo $Categories=$row['Categories']; ?></td>
                     <td><?php echo $Issue=$row['Issue']; ?></td>
                      <td><?php echo $COMMENT=$row['COMMENT']; ?></td>
+					  
                      </tr>
 
             <?php

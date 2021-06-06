@@ -77,7 +77,14 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
   <div class="iconbar-right">
   	<a href="menu12stu.php"><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
   	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
-  </div></div>
+  </div>
+  
+   <div style="color:white">
+	<?php echo "logged in by ".$Roll_No= $_SESSION['RollNo'] ?>
+		</div>			
+
+  
+  </div>
 
 
 

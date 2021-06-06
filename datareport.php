@@ -106,7 +106,15 @@ function filterTable($query)
     <div class="iconbar-right">
     <a href="menu12.php"><i onclick="history.back()"class="fa fa-arrow-left "></i></a>
       <a href="index.php"><i class="fa fa-home "></i></a>
-       </div></div>
+       </div>
+	   <div style="color:white">
+	<?php echo "logged in by ".$FACULTYNAME= $_SESSION['StaffId'] ?>
+		</div>			
+
+	   
+	   
+	   
+	   </div>
 
    <br><br>
         

@@ -118,7 +118,7 @@ $query="insert into loginstf values ('$StaffId','$password1');";
           echo $query."<br>";
           $run=mysqli_query($conn,$query);
           if(isset($run)){
-            
+            $_SESSION['StaffId']=$StaffId;
             }   }
             ?>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

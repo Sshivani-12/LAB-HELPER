@@ -72,6 +72,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
  <div class="login-clean" style="background-image:url(&quot;assets/img/computer-lab-png-computer-lab-992.png&quot;);background-repeat:no-repeat;background-size:cover ;">
     <div class="icon-bar">
    
+   <div style="color:#8c0100">
+	<?php echo "logged in by ".$FACULTYNAME= $_SESSION['StaffId'] ?>
+		</div>			
+
   <a  class="active"href="Logoutstf.php" ><i  class="fa fa-power-off"></i></a>
   <div class="iconbar-right">
   	<a  class="active"href="#"><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
