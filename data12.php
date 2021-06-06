@@ -96,34 +96,40 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
             	<input class="form-control" type="text" value="<?php echo $_SESSION['RollNo']; ?>" readonly></div>
             	<div class="form-group">
 				        <select name="LABNO" class="form-control" required >
-        <option >LAB NO</option >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <option value="" >LAB NO</option >
+        <option value="1">101</option>
+        <option value="2">102</option>
+        <option value="3">103</option>
+        <option value="4">104</option>
+        <option value="5">105</option>
       </select></div>
      
                <div class="form-group"> 
                 <select name="PCNO" class="form-control" required>
-        <option >PC NO</option>
+        <option value="">PC NO</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
+		<option value="1">6</option>
+        <option value="2">7</option>
+        <option value="3">8</option>
+        <option value="4">9</option>
+        <option value="5">10</option>
+		
       </select></div>
      
 
             	<div class="form-group">
             	<input class="form-control"
-                    type="text" name="SUBJECT" placeholder="SUBJECT" required ></div>
+                    type="text" name="SUBJECT" placeholder="LAB NAME (IN UPPER CASE)" required ></div>
                     
             	<div class="form-group">
             	<input class="form-control"  value="<?php echo date('d-m-Y');?>" readonly="readonly" name="DATE" required></div>
             	 <div class="form-group"> 
-                <select name="TIME" class="form-control">
-        <option > TIME SLOT</option>
+                <select name="TIME" class="form-control" required>
+        <option value=""> TIME SLOT</option>
         <option value="8.30-10.30">8.30-10.30</option>
         <option value="10.30-12.30">10.30-12.30</option>
         <option value="12.30-2.30">12.30-2.30</option>

@@ -91,14 +91,41 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 <div class="form-group">
                   <input class="form-control" type="text" value="<?php echo $_SESSION['RollNo']; ?>" readonly></div>
    <div class="form-group">
-<input class="form-control" type="text" maxlength="4" name="LABNO" placeholder="LAB NO" required></div>
- <div class="form-group">
-<input class="form-control" type="number" maxlength="4" name="PCNO" placeholder="PC NO" required></div>
- <div class="form-group">
+
+ 
+ 
+        	<div class="form-group" required>
+				        <select name="LABNO" class="form-control" required >
+        <option value="">LAB NO</option >
+        <option value="1">101</option>
+        <option value="2">102</option>
+        <option value="3">103</option>
+        <option value="4">104</option>
+        <option value="5">105</option>
+      </select></div>
+     
+               <div class="form-group" required> 
+        <select name="PCNO" class="form-control" required>
+        <option value="">PC NO</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+		<option value="1">6</option>
+        <option value="2">7</option>
+        <option value="3">8</option>
+        <option value="4">9</option>
+        <option value="5">10</option>
+		
+      </select></div>
+     
+
+ 
 <input class="form-control"  value="<?php echo date('d-m-Y');?>" readonly="readonly" name="DATE"></div>
  <div class="form-group">
   <select name="TIME" style="width:400px;height:42px;" class="form-control" required>
-        <option > TIME SLOT</option>
+        <option value=""> TIME SLOT</option>
         <option value="8.30-10.30">8.30-10.30</option>
         <option value="10.30-12.30">10.30-12.30</option>
         <option value="12.30-2.30">12.30-2.30</option>
@@ -109,7 +136,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
     
  <div class="form-group">
    <select name="Categories" class="form-control" required>
-  <option>Issue Categories</option>
+  <option value="">Issue Categories</option>
    <option value=Hardware>HARDWARE</option>
     <option value=Software>SOFTWARE</option>
   </select>
@@ -119,7 +146,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 
  
     <select name=Issue class="form-control" required >
-  <option>Issue</option>
+  <option value="">Issue</option>
   <optgroup label="HARDWARE">
     <option value=Mouse>Mouse</option>
     <option value==Keyboard>Keyboard</option>

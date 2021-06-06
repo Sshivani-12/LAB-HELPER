@@ -129,7 +129,8 @@ include('config.php');
 			}
 			</script>
 			</div>
-
+			<a href="Loginstf.php" class="already">You already have an account? Login here.</a>
+				
 
             <div class="form-group"><button class="btn btn-primary active btn-block btn-lg" role="button" href="Loginstf.html" onclick="return validation()" name="SignUp">SignUp</button></div></form>
 	          <?php
