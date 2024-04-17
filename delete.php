@@ -1,5 +1,4 @@
 <?php
-	//$conn=mysqli_connect("localhost:3307","root@","","mydb") or die("connection not established");
 include('config.php');
 
 	if(isset($_POST['id'])){

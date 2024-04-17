@@ -3,8 +3,6 @@
 //session_start();
 include('config.php');
 
-//$conn=mysqli_connect("localhost:3307","root@","","mydb") or die("connection not established");
-//$msg='';
 function email_exists($Email,$conn)
 {
 $row=mysqli_query($conn,"SELECT * FROM staff WHERE Email='$Email';");
@@ -21,51 +19,19 @@ $row=mysqli_query($conn,"SELECT * FROM staff WHERE Email='$Email';");
         }  
 }
 
-/*function logged_in()
-{
-if(isset($_SESSION['Email'])||isset($_COOKIE['name']))
-{
-    return false;
-}   
-else
-{
-    return true;
-}
-}*/
-
 if(isset($_POST['Submit']))
 {
     $Email=$_POST['Email'];
 
      $_SESSION['Email']= $Email;
    
-     /* if(empty($Email))
-      {
-        $msg="<div class='error'>Please Enter Your Email</div> ";
-      }
-      else if(!filter_var($Email,FILTER_VALIDATE_EMAIL))
-      {
-        $msg="<div class='error'>Please Enter Valid Email</div> ";
-      }
-      else*/ if(email_exists($Email,$conn))
+     if(email_exists($Email,$conn))
       {  
-      
-    
-   echo "<script>window.location.href='./Resetpassstf.php';</script>";
-        
-    }
+        echo "<script>window.location.href='./Resetpassstf.php';</script>";
+      }
       else{echo "<script>alert('Invalid Email !');</script>";
        
          }}
-          /*
-          $msg="<div class='error'>Email found</div> ";
-          include'resetpass.php';
-      }
-      else{
-        $msg="<div class='error'> Email does not exists</div> ";
-
-      }
-     } */
 
 ?>
 

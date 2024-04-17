@@ -7,8 +7,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 
-//include('config.php');
-
 $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not established");
 
 ?>
@@ -149,8 +147,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 
         <?php
 	            if(isset( $_POST["SUBMIT"])){
-        //  $NAMES= $_SESSION['Name']; //$_SESSION['Username'];
-        
+       
 					$ROLL_NO= $_SESSION['RollNo'];
        
 					 $LABNO=$_POST["LABNO"];
@@ -159,17 +156,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 					
 					 $DATE=$_POST["DATE"];
 					 $TIME=$_POST["TIME"];
-					
-					
-					/*if($_SESSION['Q']==1)
-					{
-						$_SESSION['Q'] = 0;
-						echo $cid."<br>";
-						$query = "update staff set Name='$Name',Roll_No='$Roll_No',Department='$Department',Email='$Email',password='$password',Year=$Year,password_repeat='password_repeat';";
-					}
-					else
-					*/
-					
 					$query="insert into data12 values ('$ROLL_NO','$LABNO','$PCNO','$SUBJECT','$DATE','$TIME');";
 					echo $query."<br>";
 					$run=mysqli_query($conn,$query);

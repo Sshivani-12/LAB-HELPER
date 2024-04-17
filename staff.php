@@ -12,9 +12,7 @@ include('config.php');
 	   	<title>staff sign up</title>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
 	 	<link rel="stylesheet" href="assets12/css/styles.min.css">
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
 .body {margin:0;}
 
@@ -77,7 +75,6 @@ include('config.php');
   	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div></div>
 
-
 <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-46px;background-color:#8c0100;color:rgb(255,255,255);">STAFF SIGN-UP</h1><br><br>
     
 	    <form method="post"  style="background-color:#8c0100;" action="staff.php">
@@ -89,7 +86,7 @@ include('config.php');
             <input class="form-control" type="email" name="EmailId" placeholder="EMAIL ID"  required ></div>
            <div class="form-group">
           
-              <select class="form-control" name="Department" required>
+        <select class="form-control" name="Department" required>
  	  	<option value="" > DEPARTMENT</option>
   			<option value="COMPUTER ">COMPUTER</option>
   			<option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
@@ -142,10 +139,8 @@ include('config.php');
 					 $Email=$_POST["EmailId"];
 					 $password=$_POST["password"];
 					 $password_repeat=$_POST["ConfirmPassword"];
-					// $password=md5(password);
-					// $password_repeat=md5(password-repeat);
-					  $password1=$password;
-					  $password_repeat1=$password_repeat;
+					 $password1=$password;
+					 $password_repeat1=$password_repeat;
 									
 					  if($password_repeat!=$password){
 					 	echo "<script>alert(' password does not match');</script>";
@@ -168,22 +163,11 @@ include('config.php');
 					
 
 					}
-					 
-					/*if($_SESSION['Q']==1)
-					{
-						$_SESSION['Q'] = 0;
-						echo $cid."<br>";
-						$query = "update staff set Name='$Name',Roll_No='$Roll_No',Department='$Department',Email='$Email',password='$password',Year=$Year,password_repeat='password_repeat';";
-					}
-					else
-					*/
-
 					$query="insert into staff values ('$Name','$Staff_id','$Email','$Department','$password1','$password_repeat1');";
 					echo $query."<br>";
 					$run=mysqli_query($conn,$query);
 					if(isset($run)){
 						echo "<script>alert('successful');</script>";
-						//echo "<script>window.location.href='./staff.php';</script>";	
 						echo "<script>window.location.href='./Loginstf.php';</script>";
 					
 					}	}

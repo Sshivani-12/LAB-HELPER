@@ -10,22 +10,20 @@ if(count($_POST)>0) {
 	$conn = mysqli_connect("localhost","root","","mydb");
    $password1=$_POST["password"];
   
-	//$result = mysqli_query($conn,"SELECT * FROM staff WHERE password = '". $_POST["password"]."' and  StaffId= '". $_POST["StaffId"]."'");
     $result = mysqli_query($conn,"SELECT * FROM staff WHERE password = '".$password1."'and StaffId= '". $_POST["StaffId"]."';")or die('alert'.$password1);
   
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
-		echo "<script>alert('Invalid Staff Id or Password! ');</script>";
-					
 		//$message = "Invalid Username or Password!";
+		echo "<script>alert('Invalid Staff Id or Password! ');</script>";
 		
 	} else {
 		session_start(); // Store data in session variables
-            $_SESSION["loggedin"] = true;
+		//$message = "You are successfully authenticated!";	        
+		$_SESSION["loggedin"] = true;
 		echo "<script>alert('You are successfully authenticated!');</script>";
 		echo "<script>window.location.href='./menu12.php';</script>";
 									
-		//$message = "You are successfully authenticated!";
 	}
 }
 ?>
@@ -66,8 +64,6 @@ if(count($_POST)>0) {
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-
-
 }
 
 .icon-bar a:hover {

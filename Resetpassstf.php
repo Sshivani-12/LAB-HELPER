@@ -7,8 +7,6 @@ $db = mysqli_connect('localhost', 'root', '', 'mydb');
 
 // ENTER A NEW PASSWORD
 if (isset($_POST['np'])) {
-  //$Username = mysqli_real_escape_string($db, $_POST['Username']);
- 
   $password = mysqli_real_escape_string($db, $_POST['password']);
   $passwordrepeat = mysqli_real_escape_string($db, $_POST['passwordrepeat']);
  $Email = $_SESSION['Email'];

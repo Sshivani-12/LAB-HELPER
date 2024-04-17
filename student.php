@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
 <?php
-//session_start();
-//include('config.php');
 $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not established");
 
 ?>
@@ -71,18 +69,8 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
   	<a href="Loginstd.php"><i onclick="history.back()"class="fa fa-arrow-left"></i></a>
   	<a class="active" href="index.php"><i class="fa fa-home"></i></a>
   </div></div>
-
- 
 <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-46px;background-color:#8c0100;color:rgb(255,255,255);">STUDENT SIGN-UP</h1><br><br>
- 
-
- 
-   
-     
-      
     <form action="student.php" style="background-color:#8c0100;"method="post">
-           
-    
                 <div class="form-group">
                 	<input class="form-control" type="text" name="Name" placeholder="NAME" required >
                 </div>
@@ -90,10 +78,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
                 	<input class="form-control" type="text" name="RollNo" placeholder="ROLL NO"required ></div>
                 	<div class="form-group">
                 	<input class="form-control" type="email" name="Email" placeholder="EMAIL" required  ></div>
-                	
-                	
-                	
-                	
                <div class="form-group" >
               <select class="form-control" name="Department" required>
  	  	<option value=""> DEPARTMENT</option>
@@ -163,8 +147,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 					 $Email=$_POST["Email"];
 					 $password=$_POST["password"];
 					 $passwordrepeat=$_POST["passwordrepeat"];
-					// $password=md5(password);
-					// $passwordrepeat=md5(passwordrepeat);
 					 $password1=$password;
 					 $passwordrepeat1=$passwordrepeat;
 					 
@@ -195,7 +177,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 					$run=mysqli_query($conn,$query);
 					if(isset($run)){
 						echo "<script>alert('successful');</script>";
-						//echo "<script>window.location.href='./student.php';</script>";	
 						echo "<script>window.location.href='./Loginstd.php';</script>";
 					
 					}	}
@@ -207,8 +188,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   
- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

@@ -11,9 +11,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 if(count($_POST)>0) {
 	$conn = mysqli_connect("localhost","root","","mydb");
 	 $password1=$_POST["password"];
-		//$result = mysqli_query($conn,"SELECT * FROM student WHERE RollNo='" . $_POST["RollNo"] . "' and password = '". $_POST["password"]."'");
 	 $result = mysqli_query($conn,"SELECT * FROM student WHERE password = '".$password1."'and RollNo= '". $_POST["RollNo"]."';")or die('alert'.$password1);
-	//echo "SELECT * FROM student WHERE password = '". $_POST["password"]."'and RollNo= '". $_POST["RollNo"]."';";
 
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
@@ -94,8 +92,6 @@ body {margin:0;}
 <img src="assets/img/user.png" width="150" style="height:98px;margin-bottom:51px;"></div>
     			 <div class="form-group"><input type="text" name="RollNo" placeholder="Roll No" class="form-control" required></div>
 			<div class="form-group"><input type="password" name="password" placeholder="Password" class="form-control" required></div>
-			
-
 			
 		<div class="form-group">
 		<input type="submit" name="submit" value="Log In" class="btn btn-primary btn-block" style="background-color:#8c0100;" ></div>

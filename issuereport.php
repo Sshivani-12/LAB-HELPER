@@ -150,9 +150,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <div class="tab-pane" role="tabpanel" id="tab-2">
 <h3 class="text-uppercase text-center justify-content-center hide-on-screen" style="font-weight:bold;">Solved Issues</h3>
  <div class="container">
-
-
-
   <table width="1000" border="2" class="table table-striped ">
       <thead bgcolor="#8c0100" style="color:white; font-size: 16px;">
     

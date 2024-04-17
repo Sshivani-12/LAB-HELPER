@@ -86,10 +86,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
   
   </div>
 
-
-
-
-
 <h1 class="text-uppercase text-center justify-content-center" style="background-size:auto;font-weight:bold;font-family:Alegreya, serif;margin-top:-46px;background-color:#8c0100;color:rgb(255,255,255);">ISSUE</h1>
       
   <br><br>
@@ -102,7 +98,7 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
  
  
         	<div class="form-group" required>
-				        <select name="LABNO" class="form-control" required >
+		<select name="LABNO" class="form-control" required >
         <option value="">LAB NO</option >
         <option value="1">101</option>
         <option value="2">102</option>
@@ -205,8 +201,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 					 $Issue=$_POST["Issue"];
 					 $COMMENT=$_POST["COMMENT"];
 					
-					
-					
 					$query="insert into issue12 values ('','$RollNo','$LABNO','$PCNO','$DATE','$TIME','$Categories', '$Issue','$COMMENT');";
 					echo $query."<br>";
 					$run=mysqli_query($conn,$query);
@@ -217,7 +211,6 @@ $conn=$conn=mysqli_connect("localhost","root","","mydb") or die("connection not 
 					 }
 				}
 				?>
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
